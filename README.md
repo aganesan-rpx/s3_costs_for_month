@@ -13,7 +13,7 @@ This Python script fetches metrics for AWS S3 buckets, including size, cost esti
 1. Replace the placeholders in the code with your AWS credentials and desired AWS region.
 2. Ensure that the necessary permissions are granted to access CloudWatch metrics and S3 buckets.
 3. Run the script.
-4. After execution, a CSV file named `bucket_metrics7.csv` will be generated with the collected metrics data.
+4. After execution, a CSV file named `s3_cost_details.csv` will be generated with the collected metrics data.
 
 ### Code Documentation
 The provided Python script performs the following tasks:
@@ -25,12 +25,12 @@ The provided Python script performs the following tasks:
 5. Iterates over each bucket to retrieve metrics.
 6. Queries CloudWatch for bucket size and number of objects metrics.
 7. Calculates size in gigabytes,megabytes, cost estimation, and file count.
-8. Writes the collected metrics data to a CSV file named `bucket_metrics.csv`.
+8. Writes the collected metrics data to a CSV file named `s3_cost_details.csv`.
 
 The script catches exceptions and prints errors if any occur during execution.
 
 ### Notes
 - Ensure that the AWS credentials used have appropriate permissions to access CloudWatch metrics and S3 buckets.
 - This script assumes standard storage for S3 buckets and calculates cost estimation based on it.
-- Modify the file name (`bucket_metrics.csv`) or file path as needed.
+- Modify the file name (`s3_cost_details.csv`) or file path as needed.
 
